@@ -54,3 +54,8 @@ public class Lista {
     public void imprimeLista() {
         for (int i = 0; i < tamanho; i++) {
             System.out.println("Funcionário " + (i + 1) + ": " + funcionarios[i].getNome() + ", salário: " + funcionarios[i].getSalario());
+        }
+
+        }
+    }
+
