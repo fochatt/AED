@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Lista funcionarios = new Lista();
+        Empresa funcionarios = new Empresa();
 
         // Cadastre o nome e o salário de 5 funcionários
         funcionarios.adiciona(new Funcionario("Nathan Marques", 2000.0));
@@ -25,12 +25,30 @@ public class Main {
 
         // Pesquise por nome um funcionário que não existe
         System.out.println("Pesquisando por um funcionário que não existe");
-        if (funcionarios.contem("Gabriel Araujo")) {
+        if (funcionarios.contem("Pedro Araujo")) {
             System.out.println("Funcionário encontrado");
         } else {
             System.out.println("Funcionário não encontrado");
         }
         System.out.println();
+        funcionarios.imprimePos(2);
 
-        // Busque um funcionário por sua posição
-        System.out.println("Buscando um funcionário por sua posição
+        funcionarios.ordenaPos();
+        funcionarios.imprimeLista();
+    }
+    ////////////////////////
+            Pilha PilhaF= new Pilha();
+
+            // Cadastro de funcionários
+            PilhaF.push(new Funcionario("Nathan Marques", 2000.0));
+           PilhaF.push(new Funcionario("Bernardo Cabral", 1500.0));
+          PilhaF.push(new Funcionario("Pedro Augusto", 4000.0));
+          PilhaF.push(new Funcionario("Joao Renato", 5000.0));
+         PilhaF.push(new Funcionario("Gustavo Pedrosa", 3000.0));
+            // Listagem de funcionários
+
+}
+
+
+
+
